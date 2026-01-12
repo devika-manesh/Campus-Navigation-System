@@ -1,0 +1,171 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f7f6;
+  color: #333;
+  height: 100%;
+}
+
+/* Header styles */
+header {
+  background: #0044cc;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+/* Main content sections */
+.hero-section,
+.cta-button,
+.feature-section,
+.testimonial-section,
+.footer {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.hero-section {
+  background: url("https://example.com/your-campus-image.jpg") no-repeat center
+    center/cover;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.cta-button {
+  background-color: #ff6f61;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.cta-button:hover {
+  background-color: #d85e55;
+}
+
+/* Feature Section */
+.feature-section {
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  margin-top: 40px;
+}
+
+.feature-section .feature {
+  width: 25%;
+  padding: 20px;
+}
+
+.feature-section h3 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+/* Testimonial Section */
+.testimonial-section {
+  background-color: #e1f4ff;
+  margin-top: 40px;
+}
+
+.testimonial-section h3 {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.testimonial {
+  margin: 10px 0;
+  font-style: italic;
+}
+
+/* Footer Section */
+footer {
+  background-color: #0044cc;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: static;
+}
+
+footer a {
+  color: #ff6f61;
+  text-decoration: none;
+}
+
+/* Forms (for login and input page) */
+form {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form input,
+form button {
+  padding: 12px 18px;
+  margin: 10px 0;
+  width: 100%;
+  max-width: 400px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form input:focus,
+form button:focus {
+  outline: none;
+  border-color: #ff6f61;
+}
+
+form button {
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #d85e55;
+}
+
+/* For responsive design */
+@media screen and (max-width: 768px) {
+  .feature-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-section .feature {
+    width: 80%;
+    margin: 10px 0;
+  }
+
+  .hero-section h2 {
+    font-size: 2em;
+  }
+
+  .cta-button {
+    width: 80%;
+  }
+}
